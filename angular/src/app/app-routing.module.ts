@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { NamesListComponent } from './components/names-list/names-list.component';
+import { NameDetailsComponent } from './components/name-details/name-details.component';
+import { AddNameComponent } from './components/add-name/add-name.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
-  { path: 'tutorials', component: TutorialsListComponent },
-  { path: 'tutorials/:id', component: TutorialDetailsComponent },
-  { path: 'add', component: AddTutorialComponent }
+  { path: 'tutorials', component: NamesListComponent },
+  { path: 'tutorials/:id', component: NameDetailsComponent },
+  { path: 'add', component: AddNameComponent }
 ];
 
 @NgModule({

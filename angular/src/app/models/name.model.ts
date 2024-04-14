@@ -1,4 +1,4 @@
-export class Tutorial {
+export class Name {
   id?: any;
   name?: string;
   gender?: string;

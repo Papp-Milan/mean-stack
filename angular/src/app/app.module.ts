@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { AddNameComponent } from './components/add-name/add-name.component';
+import { NameDetailsComponent } from './components/name-details/name-details.component';
+import { NamesListComponent } from './components/names-list/names-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddTutorialComponent,
-    TutorialDetailsComponent,
-    TutorialsListComponent
+    AddNameComponent,
+    NameDetailsComponent,
+    NamesListComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    BrowserModule,
     FormsModule,
     HttpClientModule
   ],

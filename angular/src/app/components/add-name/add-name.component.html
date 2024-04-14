@@ -8,7 +8,7 @@
           class="form-control"
           id="name"
           required
-          [(ngModel)]="tutorial.name"
+          [(ngModel)]="name.name"
           name="name"
         />
       </div>
@@ -19,17 +19,17 @@
           class="form-control"
           id="gender"
           required
-          [(ngModel)]="tutorial.gender"
+          [(ngModel)]="name.gender"
           name="gender"
         />
       </div>
 
-      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+      <button (click)="saveName()" class="btn btn-success">Submit</button>
     </div>
 
     <div *ngIf="submitted">
-      <h4>Tutorial was submitted successfully!</h4>
-      <button class="btn btn-success" (click)="newTutorial()">Add</button>
+      <h4>Name was submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newName()">Add</button>
     </div>
   </div>
 </div>
