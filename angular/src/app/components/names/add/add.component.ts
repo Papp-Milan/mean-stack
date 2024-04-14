@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { Name } from 'src/app/models/name.model';
-import { NameService } from 'src/app/services/name.service';
+import { Name } from 'src/app/models/name/name.model';
+import { NameService } from 'src/app/services/name/name.service';
 
 @Component({
-  selector: 'app-add-name',
-  templateUrl: './add-name.component.html',
-  styleUrls: ['./add-name.component.css'],
+  selector: 'name-add',
+  templateUrl: './add.component.html',
+  styleUrls: ['./add.component.css'],
 })
-export class AddNameComponent {
+export class AddComponent {
   name: Name = {
     name: '',
     gender: '',

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Name } from 'src/app/models/name.model';
-import { NameService } from 'src/app/services/name.service';
+import { Name } from 'src/app/models/name/name.model';
+import { NameService } from 'src/app/services/name/name.service';
 
 @Component({
-  selector: 'app-names-list',
-  templateUrl: './names-list.component.html',
-  styleUrls: ['./names-list.component.css'],
+  selector: 'name-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css'],
 })
-export class NamesListComponent implements OnInit {
+export class ListComponent implements OnInit {
   names?: Name[];
   currentName: Name = {};
   currentIndex = -1;

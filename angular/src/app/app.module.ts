@@ -6,17 +6,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 
+// App
 import { AppComponent } from './app.component';
-import { AddNameComponent } from './components/add-name/add-name.component';
-import { NameDetailsComponent } from './components/name-details/name-details.component';
-import { NamesListComponent } from './components/names-list/names-list.component';
+
+// Names
+import { AddComponent } from './components/names/add/add.component';
+import { DetailsComponent } from './components/names/details/details.component';
+import { ListComponent } from './components/names/list/list.component';
 
 @NgModule({
   declarations: [
+    // App
     AppComponent,
-    AddNameComponent,
-    NameDetailsComponent,
-    NamesListComponent
+    // Names
+    AddComponent,
+    DetailsComponent,
+    ListComponent
+    // Cars
   ],
   imports: [
     AppRoutingModule,

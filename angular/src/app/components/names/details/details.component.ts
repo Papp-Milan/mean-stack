@@ -1,14 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NameService } from 'src/app/services/name.service';
+import { NameService } from 'src/app/services/name/name.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Name } from 'src/app/models/name.model';
+import { Name } from 'src/app/models/name/name.model';
 
 @Component({
-  selector: 'app-name-details',
-  templateUrl: './name-details.component.html',
-  styleUrls: ['./name-details.component.css'],
+  selector: 'name-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.css'],
 })
-export class NameDetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit {
   @Input() viewMode = false;
 
   @Input() currentName: Name = {
@@ -61,7 +61,7 @@ export class NameDetailsComponent implements OnInit {
     this.nameService.delete(this.currentName.id).subscribe({
       next: (res) => {
         console.log(res);
-        this.router.navigate(['/tutorials']);
+        this.router.navigate(['/names']);
       },
       error: (e) => console.error(e)
     });
